@@ -19,6 +19,9 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('news/{id}', 'HomeController@show');
 
+//Crawler
+Route::get('/test', 'CrawlerController@test');
+
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
