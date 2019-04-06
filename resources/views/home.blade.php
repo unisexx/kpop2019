@@ -1,23 +1,29 @@
-@extends('layouts.app')
+<style>
+.fh5co-narrow-content img {
+    width: 410px;
+    height: 295px;
+    object-fit: cover;
+}
+</style>
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
+@extends('layouts.front') @section('content')
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+<div class="fh5co-narrow-content">
+	<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Kpop News</h2>
+    <div class="row animate-box" data-animate-effect="fadeInLeft">
 
-                    You are logged in!
-                </div>
+        @foreach($kpopnew as $row)
+            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 work-item">
+                <a href="news/{{ $row->id }}">
+                    <img src="{{ $row->image }}" alt="{{ $row->title }}" class="img-fluid">
+                    <h3 class="fh5co-work-title">{{ $row->title }}</h3>
+                </a>
             </div>
-        </div>
+        @endforeach
+        
+        <div class="clearfix visible-md-block"></div>
+		{{ $kpopnew->appends(@$_GET)->render() }}
     </div>
 </div>
+
 @endsection
