@@ -23,7 +23,7 @@ class CrawlerController extends Controller
         // หัวข้อ
         $title = trim($crawler->filter('#main .entry-title')->text());
         
-        // เนื้อหา
+        // เนื้อหา (วนลูปเก็บตาม p)
         $paragraph = "";
         $content = $crawler->filter('#main .entry-content p')->each(function ($node) use($paragraph) {
 
