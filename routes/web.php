@@ -20,7 +20,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('news/{id}', 'HomeController@show');
 
 //Crawler
-Route::get('/test', 'CrawlerController@test');
+Route::get('/fanthai/{id}', 'CrawlerController@fanthai');
 
 Auth::routes();
 

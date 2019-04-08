@@ -29,7 +29,7 @@ class HomeController extends Controller
     public function index()
     {
         $perPage = 15;
-        $kpopnew = Kpopnew::latest()->simplePaginate($perPage);
+        $kpopnew = Kpopnew::where('status','1')->orderBy('id','desc')->simplePaginate($perPage);
         return view('home', compact('kpopnew'));
     }
 
