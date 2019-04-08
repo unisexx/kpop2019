@@ -181,13 +181,14 @@ figure {
   transform: scaleX(1);
 }
 #fh5co-aside .fh5co-footer {
-  position: absolute;
-  bottom: 40px;
+  /* position: absolute;
+  bottom: 40px; */
   font-size: 14px;
   text-align: center;
   width: 100%;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
+  margin-top:40px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-aside .fh5co-footer {
