@@ -81,6 +81,7 @@ class CrawlerController extends Controller
                         'detail' => $detail,
                         'url'    => $url,
                         'status' => '1',
+                        'created_at' => date("Y-m-d H:i:s")
                     ]
                 );
 
