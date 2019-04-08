@@ -10,11 +10,11 @@
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Linesticker.in.th &mdash; ขายสติ๊กเกอร์ไลน์ ธีมไลน์ อิโมจิไลน์ของแท้ ราคาถูก</title>
+<title>Kpoplover.com &mdash; อัพเดทข่าวสารวงการบันเทิงเกาหลีล่าสุด</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ขายสติ๊กเกอร์ไลน์ ธีมไลน์ อิโมจิไลน์ของแท้ ซื้อง่าย ราคาถูก" />
-<meta name="keywords" content="line, stickerline, themeline, emojiline, sticker, theme, emoji" />
-<meta name="author" content="FreeHTML5.co" />
+<meta name="description" content="อัพเดทข่าวสาร แวดวง วงการบันเทิงเกาหลี ล่าสุดก่อนใคร ไม่ตกข่าว" />
+<meta name="keywords" content="kpoplover, kpop, ข่าวบันเทิง, เกาหลี, ดารา, นักร้อง, นักแสดง, พิธีกร, ไอดอล" />
+<meta name="author" content="Kpoplover.com" />
 
 <!-- 
 //////////////////////////////////////////////////////

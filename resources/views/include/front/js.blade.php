@@ -20,58 +20,7 @@
 <script>
 $('ducument').ready(function(){
     // ใส่ class img-fluid ให้รูปในหน้า Page เพื่อทำ responsive
-    $('.pageContent img').attr('class', 'img-fluid');
+    $('.KpopContent img').attr('class', 'img-fluid');
 
-    // อัพเดทยอดวิว
-    var productType = "{{ Request::segment(1) }}";
-    var productPage = "{{ Request::segment(2) }}";
-    var productID = "{{ Request::segment(3) }}";
-    // console.log(productID);
-    if(productPage == 'product'){
-        $.ajax({
-            url: '{{ url("ajax/updateviewcount") }}',
-            data:{ productType : productType, productID : productID }
-        });
-    }
-
-    if(productType == 'sticker' && ($('.sticker-stamp').length == 0)){
-
-        // alert('get_stamp');
-        $.ajax({
-            url: '{{ url("ajax/updatestamp") }}',
-            data:{ sticker_code : productID }
-        });
-    }
-
-    // เปิด sticker stamp animation ตอนคลิก
-    $('.playAnimate').click(function(){
-        playAnimate($(this));
-    });
 });
-
-function playAnimate(thisObj){
-    // console.log(thisObj);
-
-    $('audio').each(function(){
-        this.pause(); // Stop playing
-        this.currentTime = 0; // Reset time
-    }); 
-
-    // เล่นเสียง
-    var audio = $(thisObj).next('audio')[0];
-    audio.play();
-
-    // เล่น sticker animation (ถ้าเป็น stamp ให้ขยายเล็กน้อย ถ้าเป็น main เล่นเสียงอย่างเดียว)
-    if( $(thisObj).hasClass("sticker-stamp") ){
-
-        $(thisObj).attr("src", $(thisObj).data('animation'))
-            .css({"opacity":"1","width":"calc(25%)"})
-            .closest('li').siblings().find('img').css({"opacity":"0.4","width":"calc(25% - 6px)"});
-
-    }else{
-
-        $(thisObj).attr("src", $(thisObj).data('animation'));
-
-    }
-}
 </script>
