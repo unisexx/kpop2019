@@ -55,7 +55,7 @@ class CrawlerController extends Controller
                         // dd($filename);
 
                         //สร้างรูปภาพ เซฟลงโฟลเดอร์ uploads
-                        Image::make($path[0])->save(public_path('uploads/' . $filename));
+                        Image::make($path[0])->save('uploads/' . $filename);
 
                         // $xxx .= '<p>'.$node->filter('a')->attr('href').'<p>';
                         $paragraph .= '<p><img src="'.url('uploads/'.$filename).'"><p>';

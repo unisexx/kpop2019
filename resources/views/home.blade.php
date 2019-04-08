@@ -9,7 +9,7 @@
 @extends('layouts.front') @section('content')
 
 <div class="fh5co-narrow-content">
-	<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Kpop News</h2>
+	<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft" style="color:#27cacc;">Kpop News</h2>
     <div class="row animate-box" data-animate-effect="fadeInLeft">
 
         @foreach($kpopnew as $row)

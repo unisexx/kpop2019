@@ -28,7 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $perPage = 15;
+        $perPage = 9;
         $kpopnew = Kpopnew::where('status','1')->orderBy('id','desc')->simplePaginate($perPage);
         return view('home', compact('kpopnew'));
     }
