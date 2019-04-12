@@ -10,6 +10,7 @@
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+{!! SEO::generate() !!}
 <title>Kpoplover.com &mdash; อัพเดทข่าวสารวงการบันเทิงเกาหลีล่าสุด</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="อัพเดทข่าวสาร แวดวง วงการบันเทิงเกาหลี ล่าสุดก่อนใคร ไม่ตกข่าว" />

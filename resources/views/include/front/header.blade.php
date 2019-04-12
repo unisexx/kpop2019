@@ -26,8 +26,8 @@
         </p>
         <ul>
             <li><a href="https://www.facebook.com/kpoploverth" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <!-- <li><a href="#"><i class="icon-twitter"></i></a></li>
-            <li><a href="#"><i class="icon-instagram"></i></a></li>
+            <li><a href="https://twitter.com/kpoplover_th" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <!-- <li><a href="#"><i class="icon-instagram"></i></a></li>
             <li><a href="#"><i class="icon-linkedin"></i></a></li> -->
         </ul>
     </div>
